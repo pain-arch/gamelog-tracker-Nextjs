@@ -1,8 +1,11 @@
 import React from 'react'
+import {Button, ButtonGroup} from "@nextui-org/button";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div className=''>
+      HomePage
+    </div>
   )
 }
 
