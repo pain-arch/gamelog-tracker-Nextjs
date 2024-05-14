@@ -1,24 +1,30 @@
-import React from 'react'
-import {Button, ButtonGroup} from "@nextui-org/button";
-import Header from '@/components/header/header';
-import Box from '@/components/box';
-import SiteHeader from '@/components/site-header';
-import Search from '@/components/search';
-import Link from 'next/link';
-import { FiPlus } from 'react-icons/fi';
+import React from "react";
+import { Button, ButtonGroup } from "@nextui-org/button";
+import Header from "@/components/header/header";
+import Box from "@/components/box";
+import SiteHeader from "@/components/site-header";
+import Search from "@/components/search";
+import Link from "next/link";
+import { FiPlus } from "react-icons/fi";
 
 const HomePage = () => {
   return (
-    <section className='p-6'>
+    <section className="p-6">
       <Box>
         <SiteHeader />
-        <div className='flex items-center gap-2'>
+        <div className="flex items-center gap-2">
           <Search />
-          <Link className='flex items-center' href={'/new'}><FiPlus/>Add player</Link>
+          <Link className="flex items-center" href={"/new"}>
+            <FiPlus />
+            Add player
+          </Link>
+        </div>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-4'>
+
         </div>
       </Box>
     </section>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
